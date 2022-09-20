@@ -1,0 +1,29 @@
+name: Deploy to Google App Engine
+on:
+  push:
+    branches:
+      - main
+      
+jobs:
+  deploy:
+    name: GAE Deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
+    steps:
+    - uses: actions/checkout@v3
+    - id: 'auth'
+      name: 'Authenticate to Google Cloud'
+      uses: 'google-github-actions/auth@v0'
+      with:
+        workload_identity_provider: 'projects/16783664577/locations/global/workloadIdentityPools/github-actions-pool/providers/github-actions-provider'
+        service_account: 'github-actions@crwn-db-8a6a4.iam.gserviceaccount.com'
+
+    - id: 'deploy'
+      uses: 'google-github-actions/deploy-appengine@v0'
+
+    # Example of using the output
+    - id: 'test'
+      run: 'curl "${{ steps.deploy.outputs.url }}"'
