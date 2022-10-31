@@ -19,7 +19,7 @@
     "redux-saga": "^1.2.1",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.1.6",
-    "styled-components": "^5.1.0"
+    "styled-components": "^5.3.6"
   },
   "scripts": {
     "start": "react-scripts start",
