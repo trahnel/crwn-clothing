@@ -755,10 +755,10 @@ strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   dependencies:
     ansi-regex "^5.0.1"
 
-stripe@10.17.0:
-  version "10.17.0"
-  resolved "https://registry.yarnpkg.com/stripe/-/stripe-10.17.0.tgz#b65d8c9d55ec7190b866a77dffe9843941ddced7"
-  integrity sha512-JHV2KoL+nMQRXu3m9ervCZZvi4DDCJfzHUE6CmtJxR9TmizyYfrVuhGvnsZLLnheby9Qrnf4Hq6iOEcejGwnGQ==
+stripe@11.4.0:
+  version "11.4.0"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-11.4.0.tgz#7923256a0c88685d70d2d4c5f735bc4e820818ff"
+  integrity sha512-8feL70RhzN6i8rpUG5SC4ZN5KcPYCUfRYRk/yUcnHG8uLdS26AgKXAEozqddDGUUufRPKYuqs44kPg21/P5JRg==
   dependencies:
     "@types/node" ">=8.1.0"
     qs "^6.11.0"
