@@ -5,7 +5,7 @@
   "proxy": "http://localhost:5000",
   "dependencies": {
     "axios": "^0.21.2",
-    "firebase": "^7.14.0",
+    "firebase": "^9.18.0",
     "node-sass": "^7.0.3",
     "react": "^16.14.0",
     "react-dom": "^16.13.1",
